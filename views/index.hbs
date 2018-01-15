@@ -1,2 +1,171 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!--<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background:linear-gradient(90deg,#103f6e,#58ade7);" >-->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="bakground:transparent">
+
+    <a class="navbar-brand" href="#">AFER</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active pad-h">
+                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item pad-h">
+                <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item pad-h">
+                <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item pad-h">
+                <a class="nav-link" href="#">Clientes</a>
+            </li>
+            <li class="nav-item pad-h">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header id="hero" class="display-flex">
+    <div class="video-wrapper"
+         style="background-image: url('http://gelplumbing.com.au/wp-content/uploads/2013/09/blog_pipes_by_ectosage-d2xf0ic.jpg')">
+        <img src="http://gelplumbing.com.au/wp-content/uploads/2013/09/blog_pipes_by_ectosage-d2xf0ic.jpg">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="callout text-center">
+            <div class="logo">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.25 54.91">
+                    <defs></defs>
+                    <title>webveto-white-logo</title>
+                    <path d="M899.23,529.11,902,542.77c.61,3.4,1.29,7.07,1.84,10.87h.2c.61-3.73,1.63-7.54,2.38-10.8l3.53-13.73h8.15l3.33,13.25c1,3.81,1.83,7.47,2.44,11.28H924c.48-3.73,1.15-7.54,2-11.35l2.79-13.18h10.12l-10.19,33.23H919l-3.12-11.62a99.43,99.43,0,0,1-2.18-10.4h-.13a89.77,89.77,0,0,1-2.1,10.33l-3.33,11.69h-9.72l-9.72-33.23Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M949.08,549c.34,4.35,4.55,6.39,9.38,6.39a27.26,27.26,0,0,0,9.17-1.43l1.36,7A31.44,31.44,0,0,1,957,563c-11.28,0-17.73-6.52-17.73-17,0-8.42,5.3-17.73,16.79-17.73,10.73,0,14.81,8.35,14.81,16.58a26.28,26.28,0,0,1-.34,4.15l-21.4-.07Zm12.16-7.07c0-2.45-1.09-6.73-5.78-6.73-4.42,0-6.18,4-6.45,6.73Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M975.29,514.1h10.33v19h.14c2-2.86,5.43-4.69,10.05-4.69,8,0,13.73,6.59,13.66,16.78,0,12-7.54,17.94-15.15,17.94-3.88,0-7.68-1.43-10-5.37h-.14l-.41,4.62H975c.14-2.17.27-6.18.27-9.92V514.1Zm10.33,34.11a7.67,7.67,0,0,0,.2,1.83,6.32,6.32,0,0,0,6,4.89c4.42,0,7.13-3.39,7.13-9.37,0-5.16-2.31-9.24-7.13-9.24a6.4,6.4,0,0,0-6,5.09,8.82,8.82,0,0,0-.2,1.9v4.89Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M1019.3,529.45l2.85,18.76c.48,3.73,1,6.32,1,8.08h.2c.75-1.77,1.63-3.94,3.54-7.68l10-19.16h6.18l-18.28,32.89h-5.5l-5.71-32.89Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M1064,560.5a23.46,23.46,0,0,1-10.87,2.58c-8.7,0-12.5-6-12.5-13.25,0-9.92,7.34-21.13,17.94-21.13,6.25,0,9.65,3.74,9.65,8.49,0,8.63-9.72,10.87-21.88,10.67a13.64,13.64,0,0,0,.68,6.25c1.29,3,3.94,4.42,7.34,4.42a18.42,18.42,0,0,0,8.84-2.24l.82,4.21Zm-1.23-23.24c0-2.65-2-4.14-5-4.14-5.37,0-9.38,5.23-10.74,10.39,8.84.14,15.76-1.09,15.76-6.18v-.07Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M1083.88,521.57l-1.49,7.88h7.88l-.88,4.42h-7.88l-3,16a24.19,24.19,0,0,0-.68,5.23c0,2,.95,3.2,3.12,3.2a10.25,10.25,0,0,0,2.65-.27l-.27,4.42a13.14,13.14,0,0,1-4.35.61c-5,0-6.93-3-6.93-6.38a31.08,31.08,0,0,1,.74-6.18l3.2-16.65h-4.69l.82-4.42h4.69l1.15-6,5.91-1.83Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M1101.88,563.08c-8.22,0-12.84-6.12-12.84-13.52,0-10.87,7.54-20.86,18.21-20.86,8.91,0,12.91,6.72,12.91,13.66,0,10.2-7.2,20.72-18.21,20.72Zm.68-4.48c6.66,0,11.69-8.57,11.69-16.24,0-3.8-1.77-9.17-7.68-9.17-7.07,0-11.76,8.63-11.76,16.17,0,5.37,3,9.24,7.68,9.24Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M1129.11,518.11a5.24,5.24,0,1,1-5.21,5.23,5.16,5.16,0,0,1,5.21-5.23Zm0,.82a4.43,4.43,0,1,0,4.2,4.44,4.31,4.31,0,0,0-4.2-4.44Zm-1,7.46h-.93v-5.83a10.35,10.35,0,0,1,1.65-.14,3.08,3.08,0,0,1,1.81.44,1.4,1.4,0,0,1,.54,1.21,1.45,1.45,0,0,1-1.14,1.42v0c.51.09.86.56,1,1.42a4.85,4.85,0,0,0,.37,1.44h-1a4.37,4.37,0,0,1-.4-1.49,1.09,1.09,0,0,0-1.25-1h-.65v2.51Zm0-3.23h.67c.77,0,1.42-.28,1.42-1,0-.51-.37-1-1.42-1a4.53,4.53,0,0,0-.67,0v2Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M816.5,567.89a5.14,5.14,0,0,1-4.39-2.45l-27.35-44.6a5.14,5.14,0,0,1,4.38-7.83h28.7a5.15,5.15,0,0,1,4.49,2.63l7.8,13.92,8.28-14a5.15,5.15,0,0,1,4.43-2.53h28.7a5.14,5.14,0,0,1,4.33,7.93l-28.7,44.6a5.14,5.14,0,0,1-8.81-.27l-8.45-15.09-9,15.19a5.14,5.14,0,0,1-4.38,2.53Zm-18.17-44.6,18.09,29.48,7.66-13-9.25-16.51Zm37.61,16.64,7.2,12.84,19-29.48H845.77l-9.83,16.64Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                    <path d="M829.89,550.17l6-10.24,7.2,12.84,19-29.48H845.77l-9.83,16.64-5.81-10.38,7.45-12.61s1.65-3.94,5.26-3.94c7.25,0,29.45.18,29.45.18s6.92,1.12,3.57,7.74l-28.7,44.6s-4.37,5.53-8.81-.27l-8.45-15.09Z"
+                          transform="translate(-784 -513)" class="cls-1"></path>
+                </svg>
+            </div>
+            <div class="callout-text">
+                <p>Plomería Especializada</p>
+                <div class="small">
+                    <p>Lorem ipsum dolor sit amet...</p>
+                </div>
+            </div>
+            <a href="#plomero" class="btn btn-link m-h-15">
+                <strong>Plomero</strong>
+            </a>
+            <a href="#contratista" class="btn btn-link m-h-15">
+                <strong>Contratista</strong>
+            </a>
+            <a href="#gobierno" class="btn btn-link m-h-15">
+                <strong>Gobierno</strong>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+
+<section id="contact" class="contact" style="padding-bottom:200px">
+    <div class="container p-t-20">
+        <div class="row margin-v">
+            <div class="col-xs-12 col-md-offset-1 col-md-10">
+                <div class="subtitle">Contact Us</div>
+                <h2 class="with-subtitle" style="margin-left: -1px;">How to find us</h2>
+                <p>If what you read here is for you, reach out to us, we don't bite!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-1 col-md-10 card ">
+                <div class="row m-v-0">
+                    <div class="col-xs-12 col-md-8 contact-form display-flex">
+                        <h3 class="margin-v">Send us your message</h3>
+                        <h3 class="submitted" style="display: none;">Thanks for getting in touch.</h3>
+                        <form method="POST" action="/">
+                            <input type="hidden" name="action" value="contact-form/send">
+                            <div class="row m-v-0"><div class="col-xs-12 col-md-5">
+                                <label for="fromName">Your Name</label>
+                                <input id="name" type="text" name="fromName" required="required"></div>
+                                <div class="col-xs-12 col-md-5 col-md-offset-2">
+                                    <label for="fromEmail">E-Mail</label>
+                                    <input id="email" type="email" name="fromEmail" required="required"></div>
+                                <div class="col-xs-12 col-md-5"><label for="message[Phone]">Phone</label>
+                                    <input id="phone" type="text" name="message[Phone]" required="required"></div>
+                                <div class="col-xs-12 col-md-5 col-md-offset-2"><label for="message[Company]">Company</label>
+                                    <input id="company" type="text" name="message[Company]" required="required"></div>
+                                <div class="col-xs-12 col-md-9"><label for="message[body]">Message</label>
+                                    <textarea id="message" name="message[body]" required="required"></textarea>
+                                </div> <div class="col-xs-12 col-md-3 display-flex">
+                                    <button type="submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                        <span>Send</span><span style="display: none;">
+                                        <i class="fa fa-cog fa-spin"></i>
+                                    </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-md-4 contact-information">
+                        <h3>Contact Information</h3>
+                        <p class="p-l-30 m-t-0 m-b-10">
+                            <i class="fa fa-absolute fa-map-marker"></i>
+                            15/1, Caledonia Tower, Qui-si-sana, Sliema, SLM3114, Malta
+                        </p>
+                        <p class="p-l-30 m-t-0 m-b-10">
+                            <i class="fa fa-absolute fa-envelope-o"></i>
+                            info@webveto.com</p>
+                        <p class="m-b-20 m-t-auto">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="logo"></div>
+                <div class="links">
+                    <a href="#nosotros" class="pad-r">Nosotros</a>
+                    <a href="#servicios" class="pad-h">Servicios</a>
+                    <a href="#clientes" class="pad-h">Clientes</a>
+                    <a href="#contact" class="pad-h">Contacto</a></div>
+                <p class="margin-v">© 2018 Company. Derechos et etc etc</p>
+            </div>
+
+            <div class="col-xs-12 col-md-3">
+                <p>Calle X num 53454 Ciudad Y <br> 103222, Mexico <br> contacto@xxxxx.mx</p>
+                <div class="logo">
+                    <img src="/images/vectorncc.svg" style="width:30px"> Developed by NCC
+                    </img>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,6 +1,237 @@
+
+// Your variable overrides
+
+
+// Universal Styles
 body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif
 
 a
   color: #00B7FF
+
+.pad-r
+  padding-right: 1rem
+
+.pad-h
+  padding-right: 1rem
+  padding-left: 1rem
+
+.margin-v
+  margin-top: 1rem
+  margin-bottom: 1rem
+
+.m-t-auto
+  margin-top: auto
+
+//  NAVBAR STUFF
+.navbar
+  padding: 2rem 5rem
+
+.navbar-dark .navbar-nav .nav-link
+  color: #fff
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link
+  border-bottom: 1px solid white
+
+// LANDING PAGE
+  //Header
+#hero
+  color: #fff
+  position: relative
+  padding-top: 1px
+  min-height: 90vh
+  margin-bottom: 250px
+
+  .video-wrapper
+    -webkit-transform: skew(-4deg) rotate(-4deg)
+    transform: skew(-4deg) rotate(-4deg)
+    position: absolute
+    z-index: -1
+    width: 100%
+    top: -250px
+    left: 0
+    overflow: hidden
+    //padding-bottom: 300px
+    background: 50% no-repeat
+    background-size: cover
+
+  .overlay
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: -webkit-gradient(linear,left top,right top,from(rgba(16,63,110,.8)),to(rgba(88,173,231,.6)))
+    background: linear-gradient(90deg,rgba(16,63,110,.8),rgba(88,173,231,.6))
+
+  .callout
+    margin: 100px auto 100px
+    font-weight: 200
+    font-size: 42px
+
+  .logo
+    svg
+      fill: #fff
+      max-width: 271px
+
+  img
+    margin-top: 50px
+    z-index: -1
+    width: 100%
+    -webkit-transform: skew(4deg) rotate(4deg)
+    transform: skew(4deg) rotate(4deg)
+    will-change: transform
+    background-color: #103f6e
+    background-size: cover
+    -o-object-fit: cover
+    object-fit: cover
+
+.callout-text
+  text-shadow: 0 0 5px #000
+
+  p
+    margin: 1.5rem auto
+
+.display-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -ms-flex-direction: column
+  flex-direction: column
+
+
+.m-h-15
+  margin-left: 15px
+  margin-right: 15px
+
+.btn
+
+  &.btn-link
+    color: white
+    border-bottom: 1px solid #fff
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    border-radius: 0
+    padding-left: 0
+    padding-right: 0
+
+  &.btn-primary-square
+    border-radius: 3px
+    width: 100%
+    background: #58ade7
+    padding: 8px 40px
+    color: #fff
+    font-weight: 200
+    font-size: 11px
+    border: 1px solid #58ade7
+    margin-bottom: 20px
+
+
+// CONTACT SECTION
+.contact
+  position: relative
+  z-index: -1
+  background: #58ade7
+  -webkit-transform: rotate(4deg) skew(4deg)
+  transform: rotate(4deg) skew(4deg)
+  color: white
+
+  h2
+    color: white
+
+  .container
+    transform: rotate(-4deg) skew(-4deg)
+
+.subtitle
+  text-transform: uppercase
+  font-weight: 500
+  color: #01629c
+
+.contact-form
+  background: #fff
+  border: 1px solid #e3e4e5
+  border-bottom: none
+  border-top-left-radius: 10px
+  border-top-right-radius: 0
+  border-bottom-left-radius: 10px
+  padding: 0 40px 10px
+    
+  h3
+    color: #103f6e
+    font-weight: 200
+
+  label
+    font-size: 10px
+    color: #b9b9b9
+    display: block
+
+  input
+    height: 30px
+    
+  input, textarea
+    border: none
+    border-bottom: 1px solid #f2f2f2
+    -webkit-box-shadow: none
+    box-shadow: none
+    font-size: 13px
+    color: #2a547d
+    margin-bottom: 20px
+    width: 100%
+
+.contact-information
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
+  background: #103f6e
+  border-bottom-right-radius: 10px
+  padding: 0 40px 10px
+  color: #fff
+  border-top-right-radius: 10px
+  border-bottom-left-radius: 0
+
+  h3
+    color: #fff
+    margin: 35px 0 30px
+    font-weight: 200
+
+  p
+    font-size: 13px
+    position: relative
+
+.card
+  border-radius: 10px
+  -webkit-box-shadow: 0 3px 25px rgba(0,0,0,.16)
+  box-shadow: 0 3px 25px rgba(0,0,0,.16)
+  margin-top: -200px
+
+.contact-box
+  .card
+    background: none
+    border: none
+    margin-top: -200px
+    visibility: visible
+    -webkit-transform: translateY(0) scale(1)
+    opacity: 1
+    transform: translateY(0) scale(1)
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s
+    transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s
+
+// FOOTER
+.footer
+  margin-top: 100px
+  padding: 2rem 0
+  background: #f4f4f4
+  color: #c9c9c9
+  font-size: 0.8em
+
+  a
+    color: #c9c9c9
+    text-decoration: none
+    font-weight: 500
+

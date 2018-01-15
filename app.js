@@ -7,6 +7,8 @@ let bodyParser = require('body-parser');
 let sassMiddleware = require('node-sass-middleware');
 let helmet = require('helmet');
 
+// require('bootstrap');
+
 
 let index = require('./routes/index');
 let users = require('./routes/users');

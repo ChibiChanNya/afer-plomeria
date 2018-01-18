@@ -150,6 +150,10 @@ a:not([href]):not([tabindex])
   @media screen and (max-width: $break-nav-collapse )
     display: none !important
 
+.hidden-except-collapses-nav
+  @media screen and (min-width: $break-nav-collapse )
+    display: none !important
+
 @media screen and (min-width: $break-xl)
   .container
     max-width: 1400px
@@ -220,6 +224,12 @@ a:not([href]):not([tabindex])
 
     @media screen and (min-width: $break-md)
       margin-top: 100px
+
+    @media screen and (max-width: $break-md)
+      font-size: 32px
+
+
+
 
   .logo
     svg

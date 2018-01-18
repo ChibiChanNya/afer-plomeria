@@ -16,8 +16,11 @@
                     <li class="nav-item pad-h">
                         <a class="nav-link scroll" href="#nosotros">Nosotros</a>
                     </li>
-                    <li class="nav-item pad-h">
+                    <li class="nav-item pad-h hidden-while-collapses-nav">
                         <a class="nav-link scroll" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item pad-h hidden-except-collapses-nav">
+                        <a class="nav-link scroll" href="#servicios-mobile">Servicios</a>
                     </li>
                     <li class="nav-item pad-h">
                         <a class="nav-link scroll" href="#productos">Productos</a>
@@ -32,7 +35,7 @@
 
 <header id="inicio" class="display-flex">
     <div class="video-wrapper"
-         style="background-image: url('http://allenc.com/wp-content/uploads/2017/09/igor-ovsyannykov-371079-360x540.jpg')">
+         style="background-image: url('http://sameatlantapost.org/wp-content/uploads/2014/02/SAME-Upper-background_small-400x800.jpg')">
         <img class="hidden-while-collapses-nav" style="height:100%" src="http://gelplumbing.com.au/wp-content/uploads/2013/09/blog_pipes_by_ectosage-d2xf0ic.jpg">
         <div class="overlay"></div>
     </div>
@@ -208,7 +211,7 @@
     </div>
 </section>
 
-<section id="services" class="services services-mobile hidden-md-up section-m-b">
+<section id="servicios-mobile" class="services services-mobile hidden-md-up section-m-b">
     <div class="container">
         <div class="subtitle">Lo que hacemos</div>
         <h2 class="with-subtitle">Nuestros Servicios</h2>
@@ -360,11 +363,11 @@
 </section>
 
 
-<section id="contacto" class="contact">
+<section  class="contact">
     <div class="container p-t-20">
         <div class="row margin-v">
             <div class="col-xs-12 col-md-offset-1 col-md-10">
-                <div class="subtitle">Contacto</div>
+                <div class="subtitle" id="contacto">Contacto</div>
                 <h2 class="with-subtitle" style="margin-left: -1px;">Como encontrarnos</h2>
                 <p>Si estas interesado en nuestros servicios, no dudes en contactarnos</p>
             </div>
@@ -432,19 +435,13 @@
         <div class="row">
             <div class="col-xs-12 col-md-9">
                 <div class="logo"></div>
-                <div class="links">
-                    <a href="#top" class="pad-r scroll">Inicio</a>
-                    <a href="#nosotros" class="pad-r scroll">Nosotros</a>
-                    <a href="#productos" class="pad-h scroll">Products</a>
-                    <a href="#servicios" class="pad-h scroll">Servicios</a>
-                    <a href="#contacto" class="pad-h scroll">Contacto</a></div>
                 <p class="margin-v">© 2018 Company. Derechos et etc etc</p>
             </div>
 
             <div class="col-xs-12 col-md-3">
                 <p>Calle X num 53454 Ciudad Y <br> 103222, Mexico <br> contacto@xxxxx.mx</p>
                 <a class="logo" href="http://notecode.mx" target="_blank">
-                    <img src="/images/vectorncc.svg" style="width:30px"> Developed by NCC
+                    <img src="/images/NCC10.png" style="width:100px">
                 </a>
             </div>
         </div>
@@ -491,17 +488,28 @@
         }
 
         //    SMOOTH SCROLLING
+        // need different offset on mobile
+        let offset =-60;
+        if($( window ).width()< 992){
+            offset = -270;
+        }
         $('a.scroll[href*="#"]:not([href="#"])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top-100
+                        scrollTop: target.offset().top + offset
                     }, 1000);
                     return false;
                 }
             }
+        });
+
+
+        // Mobile Nav auto-collapse
+        $('a.nav-link').on('click', function(){
+            $('.navbar-toggler').click() //bootstrap 4.x by Richard
         });
 
     });

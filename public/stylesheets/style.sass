@@ -571,7 +571,7 @@ a:not([href]):not([tabindex])
 // CONTACT SECTION
 .contact
   position: relative
-  z-index: 2
+  z-index: 0
   background: $light_blue
   -webkit-transform: rotate(4deg) skew(4deg)
   transform: rotate(4deg) skew(4deg)
@@ -698,3 +698,56 @@ a:not([href]):not([tabindex])
     text-decoration: none
     font-weight: 500
 
+
+/*SOCIAL MEDIA ICONS*/
+/* Style all font awesome icons */
+.fa.social
+  padding: 10px
+  width: 50px
+  text-align: center
+  font-size: 30px !important
+  text-decoration: none
+  border-radius: 50%
+  background: transparent
+  color: #9faab7
+  border: 1px solid #9faab7
+
+
+  &:hover
+    text-decoration: none
+
+  .fa-sm
+    width: 30px
+    height: 30px
+    margin-bottom: 30px
+    border: none
+
+/* Set a specific color for each brand when hovered */
+
+/* Facebook */
+.fa-facebook:hover
+  background: #3B5998
+  color: white
+
+/* Twitter */
+.fa-twitter:hover
+  background: #55ACEE
+  color: white
+
+
+/* Youtube */
+.fa-youtube:hover
+  background: #E32524
+  color: white
+
+
+/* Youtube */
+.fa-linkedin:hover
+  background: #1175b0
+  color: white
+
+
+/* Instagram */
+.fa-instagram:hover
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)
+  color: white

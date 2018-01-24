@@ -1,6 +1,6 @@
 
 // Your variable overrides
-$light-blue: #58ade7
+$light-blue: #255f97
 $dark-gray: #807f7f
 $light-gray: #f7f7f7
 
@@ -14,7 +14,7 @@ $break-nav-collapse: 992px
 // Universal Styles
 body
   //font: 16px "Lucida Grande", Helvetica, Arial, sans-serif
-  font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif
   font-size: 16px
   color: gray
   font-weight: 300
@@ -102,7 +102,7 @@ a:not([href]):not([tabindex])
 
   &.scrolled
     opacity: 0
-    background: linear-gradient(1deg, #103f6e,#58ade7)
+    background: linear-gradient(1deg, #255f97, #218dc3)
 
 
 .navbar-dark
@@ -187,7 +187,7 @@ a:not([href]):not([tabindex])
   color: #fff
   position: relative
   padding-top: 1px
-  min-height: 800px
+  min-height: 700px
 
   @media screen and (min-width: $break-md)
     margin-bottom: 0
@@ -198,7 +198,7 @@ a:not([href]):not([tabindex])
     position: absolute
     z-index: -1
     width: 100%
-    height: 1000px
+    min-height: 900px
     top: -310px
     left: 0
     overflow: hidden
@@ -208,6 +208,8 @@ a:not([href]):not([tabindex])
 
     @media screen and (min-width: $break-nav-collapse)
       top: -280px
+      height: 120vh
+
 
   .overlay
     position: absolute
@@ -237,7 +239,7 @@ a:not([href]):not([tabindex])
       fill: #fff
       max-width: 271px
 
-  img
+  img:not(.svg)
     position: relative
     top: 165px
     z-index: -1
@@ -293,7 +295,7 @@ a:not([href]):not([tabindex])
     margin-bottom: 20px
 
   &.btn-primary
-    padding: 10px 40px
+    padding: 10px 15px
     border-radius: 30px
     background: $light_blue
     color: #fff
@@ -302,6 +304,10 @@ a:not([href]):not([tabindex])
     &:hover, &:active
       background: #fff
       color: $light_blue
+      text-align: center
+
+      .svg
+        display: none
 
 // ABOUT US SECTION
 
@@ -324,6 +330,9 @@ a:not([href]):not([tabindex])
 
       img
         width: 100% !important
+
+.subtitle
+    color: #01629c
 
 
 .floating-quote
@@ -508,6 +517,8 @@ a:not([href]):not([tabindex])
         p
           margin-top: 15px
 
+  .subtitle
+    color: white
 
 
 // PRODUCTS
@@ -586,10 +597,10 @@ a:not([href]):not([tabindex])
     transform: rotate(-4deg) skew(-4deg)
     padding-top: 40px
 
-.subtitle
-  text-transform: uppercase
-  font-weight: 500
-  color: #01629c
+  .subtitle
+    text-transform: uppercase
+    font-weight: 500
+    color: white
 
 .contact-form
   background: #fff

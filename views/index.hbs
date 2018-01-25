@@ -575,6 +575,10 @@
         $('#client-btn').click(function(){
             $('#client-slide').click();
         })
+
+    //    Adjust INICIO to be same size as Video-Wrapper on view
+        let wrapper_height = $('.video-wrapper').height();
+        $('#inicio').height(wrapper_height - 80);
     });
 
 

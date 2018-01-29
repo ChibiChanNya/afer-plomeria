@@ -912,8 +912,9 @@
             }
         });
         // Mobile Nav auto-collapse
-        $('a.nav-link').on('click', function () {
-            $('.navbar-toggler').click(); //bootstrap 4.x by Richard
+        $('.navbar a.nav-link').on('click', function () {
+            if( $('.navbar-collapse').hasClass('show'))
+                $('.navbar-toggler').click(); //bootstrap 4.x by Richard
         });
 
         //   Client Button Control Carousel

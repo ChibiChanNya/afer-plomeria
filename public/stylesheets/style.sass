@@ -5,6 +5,7 @@
 
 
 // Your variable overrides
+$normal-blue: #058bc4
 $light-blue: #255f97
 $dark-gray: #807f7f
 $light-gray: #f7f7f7
@@ -550,8 +551,20 @@ a:not([href]):not([tabindex])
 .soluciones
   margin: 100px 0
 
-  .card-block .card
+  .card-group .card
     box-shadow: none
+    -webkit-box-shadow: none
+
+    .card-block
+      h4
+        font-size: 1.3em
+
+ul.wrapping-list
+
+  li
+    float: left
+    margin: 10px 20px
+
 
 // PRODUCTS
 .card-deck .card
@@ -561,7 +574,7 @@ a:not([href]):not([tabindex])
     padding: 15px 0 0 0
     
   &:hover
-    box-shadow: 0 0 2px 3px $light-blue
+    box-shadow: 0 0 2px 3px $normal-blue
 
   p
     font-size: 1em !important

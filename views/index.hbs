@@ -1,7 +1,7 @@
 <div id="top"></div>
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <a class="navbar-brand center-block" href="#">
-        <img src="/images/logoaferblanco2.svg" class="svg" width="120" height="50">
+        <img src="/images/logoblanco.png" class="svg" width="120" height="50">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,22 +13,22 @@
             <li class="nav-item pad-h">
                 <a class="nav-link scroll" href="#top">Inicio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item pad-h">
+            <li class="nav-item pad-h hideable gobierno-only">
                 <a class="nav-link scroll" href="#nosotros">Nosotros</a>
             </li>
-            <li class="nav-item pad-h hidden-while-collapses-nav">
+            <li class="nav-item pad-h hidden-while-collapses-nav hideable gobierno-only constructor-only mostrador-only">
                 <a class="nav-link scroll" href="#servicios">Por qué elegirnos</a>
             </li>
-            <li class="nav-item pad-h hidden-except-collapses-nav">
+            <li class="nav-item pad-h hidden-except-collapses-nav hideable gobierno-only constructor-only mostrador-only">
                 <a class="nav-link scroll" href="#servicios-mobile">Por qué elegirnos</a>
             </li>
             <li class="nav-item pad-h">
                 <a class="nav-link scroll" href="#soluciones">Soluciones</a>
             </li>
-            <li class="nav-item pad-h">
+            <li class="nav-item pad-h mostrador-only constructor-only plomero-only">
                 <a class="nav-link scroll" href="#productos">Catálogos</a>
             </li>
-            <li class="nav-item pad-h">
+            <li class="nav-item pad-h hideable mostrador-only plomero-only constructora-only">
                 <a class="nav-link scroll" href="#promociones">Promociones</a>
             </li>
             <li class="nav-item pad-h">
@@ -50,7 +50,7 @@
     <div class="container">
         <div class="callout text-center">
             <div class="logo">
-                <img src="/images/logoaferblanco2.svg" class="svg" width="300" height="150">
+                <img src="/images/logoblanco.png" class="svg" width="300" height="150">
 
             </div>
             <div class="callout-text">
@@ -60,17 +60,18 @@
                     <p>“Más que productos, soluciones”</p>
                 </div>
             </div>
-            <a href="#productos" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"> <img
-                    class="svg" style="height:30px;margin-top:-5px" src="/images/bombero.png">Plomero</a>
-            <a href="#servicios" id class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 scroll"><img class="svg"
+            <a href="#soluciones" id="plomero-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"> <img
+                    class="svg" style="height:30px;margin-top:-5px" src="/images/bombero.png" >Plomero</a>
+            <a href="#soluciones" id="constructor-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 scroll"><img class="svg"
                                                                                                          style="height:30px;margin-top:-5px"
                                                                                                          src="/images/maquina.png">
                 Constructor</a>
-            <a href="#servicios" id="client-btn"
+            <a href="#soluciones" id="client-btn"
                class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"><img class="svg"
                                                                                                 style="height:30px;margin-top:-5px"
                                                                                                 src="/images/cliente.svg">Mostrador</a>
-            <a href="#nosotros" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"><img
+
+            <a href="#nosotros" id="gobierno-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"><img
                     class="svg" style="height:30px;margin-top:-5px" src="/images/partenon.svg">Gobierno</a>
         </div>
     </div>
@@ -78,8 +79,7 @@
 
 <div id="scroll-to"></div>
 
-
-<section id="nosotros" class="section-m-b about-us">
+<section id="nosotros" class="section-m-b about-us hideable gobierno-only">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-7">
@@ -91,12 +91,15 @@
                         que nos ratifiquen como los mejores en nuestro rubro. Más de 15 años de experiencia nos
                         avalan.</p>
                 </div>
-                <h4>Visión</h4>
-                <div class="text-spacious">
-                    <p>Ser la empresa líder en nuestro rubro, cubriendo las necesidades del mercado Chihuahuense con
-                        vistas a crecer y ofrecer nuestras soluciones por todo el norte del país, haciendo de AFER Plomería
-                        una opción confiable, económica y con el mejor servicio.</p>
-                </div>
+                <h4>Valores</h4>
+                <ul class="wrapping-list col-md-10 big-margin">
+                    <li>Honestidad</li>
+                    <li>Compromiso</li>
+                    <li>Integridad</li>
+                    <li>Lealtad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Actitud de servicio</li>
+                </ul>
             </div>
             <div class="col-xs-12 col-sm-5">
                 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -150,7 +153,7 @@
 </section>
 
 
-<section class="services margin-v hidden-md-down" id="servicios">
+<section class="services margin-v hidden-md-down hideable gobierno-only constructor-only mostrador-only" id="servicios">
     <div class="container">
         <div class="row  carousel slide" data-ride="carousel" id="carouselIndicators2" data-interval="false">
             <!--<div id="carouselIndicators2" class="carousel slide" data-ride="carousel">-->
@@ -161,16 +164,16 @@
 
                 <ol class="nav flex-column carousel-indicators">
                     <li data-target="#carouselIndicators2" data-slide-to="0" class="nav-item active">
-                        <a class="nav-link"><i class="fa fa-wrench" aria-hidden="true"></i>Variedad</a>
+                        <a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i>Variedad</a>
                     </li>
                     <li data-target="#carouselIndicators2" data-slide-to="1" class="nav-item">
-                        <a class="nav-link"><i class="fa fa-cogs" aria-hidden="true"></i>Precios</a>
+                        <a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i>Precios</a>
                     </li>
                     <li class="nav-item" id="client-slide" data-target="#carouselIndicators2" data-slide-to="2">
                         <a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i>Servicio</a>
                     </li>
                     <li class="nav-item" data-target="#carouselIndicators2" data-slide-to="3">
-                        <a class="nav-link"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Aliados</a>
+                        <a class="nav-link"><i class="fa fa-star-o" aria-hidden="true"></i>Aliados</a>
                     </li>
                     <li class="nav-item" data-target="#carouselIndicators2" data-slide-to="4">
                         <a class="nav-link"><i class="fa fa-bath" aria-hidden="true"></i>Experiencia</a>
@@ -181,19 +184,19 @@
                 <div class="wrapper offset-md-1">
                     <div class="carousel-inner " role="listbox" style="text-align:justify">
                         <div class="carousel-item active">
-                            <h2 class="margin-v"><i class="fa fa-wrench" aria-hidden="true"></i>Mayor Variedad</h2>
+                            <h2 class="margin-v"><i class="fa fa-star-o" aria-hidden="true"></i>Mayor Variedad</h2>
                             <div class="col-md-10 offset-md-1 ">
                                 <img class="d-block img-fluid col-uxl-10 offset-uxl-1"
-                                     src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/11/13/5a09cb985ff9e.jpeg"
+                                     src="/images/tubes.jpg"
                                      alt="Primera Slide">
                                 <p>Contamos con una alta gama de productos.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <h2><i class="fa fa-cogs" aria-hidden="true"></i>Mejores Precio</h2>
+                            <h2><i class="fa fa-star-o" aria-hidden="true"></i>Mejores Precios</h2>
                             <div class="col-md-10 offset-md-1 ">
                                 <img class="d-block img-fluid col-uxl-10 offset-uxl-1"
-                                     src="https://i1.wp.com/www.gamerfocus.co/wp-content/uploads/2017/10/dragon_ball_super_06.png?resize=1160%2C653"
+                                     src="/images/tubes.jpg"
                                      alt="Second slide">
                                 <p>Tenemos los precios más competitivos del rubro.</p>
                             </div>
@@ -202,7 +205,7 @@
                             <h2><i class="fa fa-star-o" aria-hidden="true"></i>Gran Servicio</h2>
                             <div class="col-md-10 offset-md-1">
                                 <img class="d-block img-fluid col-uxl-10 offset-uxl-1"
-                                     src="http://www.fotogramas.es/var/ezflow_site/storage/images/series-television/dragon-ball-super-son-goku-vegeta-son-gohan-freezer/137758102-1-esl-ES/Dragon-Ball-Super-Veremos-a-Son-Goku-Vegeta-y-Son-Gohan-aliados-con-Freezer_landscape.jpg"
+                                     src="/images/tubes.jpg"
                                      alt="Third slide">
                                 <p>Nuestro equipo está altamente capacitado para brindarle una atención ágil y
                                     eficiente.
@@ -213,7 +216,7 @@
                             <h2><i class="fa fa-star-o" aria-hidden="true"></i>Aliados</h2>
                             <div class="col-md-10 offset-md-1">
                                 <img class="d-block img-fluid col-uxl-10 offset-uxl-1"
-                                     src="http://www.fotogramas.es/var/ezflow_site/storage/images/series-television/dragon-ball-super-son-goku-vegeta-son-gohan-freezer/137758102-1-esl-ES/Dragon-Ball-Super-Veremos-a-Son-Goku-Vegeta-y-Son-Gohan-aliados-con-Freezer_landscape.jpg"
+                                     src="/images/tubes.jpg"
                                      alt="Third slide">
                                 <p>Tenemos una amplia red de proveedores.</p>
                             </div>
@@ -222,7 +225,7 @@
                             <h2><i class="fa fa-star-o" aria-hidden="true"></i>Experiencia</h2>
                             <div class="col-md-10 offset-md-1">
                                 <img class="d-block img-fluid col-uxl-10 offset-uxl-1"
-                                     src="http://www.fotogramas.es/var/ezflow_site/storage/images/series-television/dragon-ball-super-son-goku-vegeta-son-gohan-freezer/137758102-1-esl-ES/Dragon-Ball-Super-Veremos-a-Son-Goku-Vegeta-y-Son-Gohan-aliados-con-Freezer_landscape.jpg"
+                                     src="/images/tubes.jpg"
                                      alt="Third slide">
                                 <p>Porque nuestros 15 años de experiencia nos avalan.
                                 </p>
@@ -244,7 +247,7 @@
     </div>
 </section>
 
-<section id="servicios-mobile" class="services services-mobile hidden-md-up section-m-b">
+<section id="servicios-mobile" class="services services-mobile hidden-md-up section-m-b hideable gobierno-only constructor-only mostrador-only">
     <div class="container">
         <div class="subtitle">Por qué elegirnos</div>
         <h2 class="with-subtitle">Ofrecemos más</h2>
@@ -263,7 +266,7 @@
                 <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-block">
                         <img class="d-block img-fluid"
-                             src="https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/11/13/5a09cb985ff9e.jpeg"
+                             src="/images/tubes.jpg"
                              alt="Primera Slide">
                         <p>Ginyu salza gero. Grand arale corporation 18 garlic spice emperor mercenary. Robot gohan pui
                             dolltaki capsule king. Great spice goku burter raspberry brief jeice future namekian pan.
@@ -285,7 +288,7 @@
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-block">
                         <img class="d-block img-fluid"
-                             src="https://i1.wp.com/www.gamerfocus.co/wp-content/uploads/2017/10/dragon_ball_super_06.png?resize=1160%2C653"
+                             src="/images/tubes.jpg"
                              alt="Second slide">
                         <p>Dende papoi. Namek guido syn baba dolltaki z corporation suno piccolo 18. Great spice
                             toriyama akira 18 chaozu. Miira ultra mai jr. 17 shorty fighters saiyan kakarot freezer.
@@ -307,7 +310,7 @@
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="card-block">
                         <img class="d-block img-fluid"
-                             src="http://www.fotogramas.es/var/ezflow_site/storage/images/series-television/dragon-ball-super-son-goku-vegeta-son-gohan-freezer/137758102-1-esl-ES/Dragon-Ball-Super-Veremos-a-Son-Goku-Vegeta-y-Son-Gohan-aliados-con-Freezer_landscape.jpg"
+                             src="/images/tubes.jpg"
                              alt="Third slide">
                         <p>Rasin broly yajirobe dende shugesh mr. 17 fasha. Great fasha. Froug satan kai hirudegarm 18.
                             Akira earth suno ultimate raspberry 18 corporation. Earth bills blood master corporation
@@ -321,13 +324,12 @@
 
     </div>
 </section>
-
 <section id="soluciones" class="soluciones section-m-b">
     <div class="container">
         <!-- SECCION PLOMERO-->
-        <div id="plomeria">
-            <div class="subtitle">Tenemos la solución para ti</div>
-            <h2 class="with-subtitle" style="margin-left: -1px;">Soluciones en Plomería</h2>
+        <div id="plomeria" class="hideable plomero-only">
+            <div class="subtitle">Ponemos a su disposición la mas alta gama de productos</div>
+            <h2 class="with-subtitle" style="margin-left: -1px;">Soluciones para Plomeros</h2>
             <div class="card-group">
                 <!-- FIRST BLOCK WITH 4 ACCORDIONS-->
                 <!--<div class="col-md-4 display-flex">-->
@@ -542,9 +544,9 @@
         </div>
 
         <!-- SECCION MOSTRADOR-->
-        <div id="mostrador">
+        <div id="mostrador" class="hideable mostrador-only">
             <div class="subtitle">Tenemos la solución para ti</div>
-            <h2 class="with-subtitle" style="margin-left: -1px;">Soluciones en Plomería</h2>
+            <h2 class="with-subtitle" style="margin-left: -1px;">Soluciones para Clientes</h2>
             <div class="card-group">
                 <!-- FIRST BLOCK WITH 4 ACCORDIONS-->
                 <!--<div class="col-md-4 display-flex">-->
@@ -832,7 +834,7 @@
                 <!--<div class="col-md-4 display-flex">-->
                 <div class="card">
                     <div class="card-block">
-                        <h3 class="card-title">Grifería</h3>
+                        <h3 class="card-title">Otros</h3>
                         <div id="mostradorA" role="tablist" aria-multiselectable="true">
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBOne">
@@ -905,7 +907,7 @@
                                 </div>
                                 <div id="collapseMA4" class="collapse" role="tabpanel" aria-labelledby="headingMBFour">
                                     <div class="card-block">
-                                        <h4>Contracanastas</h4>
+                                        <h4>Marcas</h4>
                                         <div class="logo-wrap">
                                             <img src="/images/logos/logo1.png">
                                             <img src="/images/logos/logo1.png">
@@ -984,7 +986,7 @@
 
 
         <!-- SECCION CONSTRUCTORA -->
-        <div id="plomeria">
+        <div id="constructora" class="hideable constructora-only gobierno-only">
             <div class="subtitle">Tenemos la solución para ti</div>
             <h2 class="with-subtitle" style="margin-left: -1px;">Soluciones para Constructoras</h2>
             <div class="card-group">
@@ -1126,7 +1128,7 @@
 
 </section>
 
-<section id="productos" class="products section-m-b">
+<section id="productos" class="products section-m-b hideable mostrador-only plomero-only constructora-only">
     <div class="container">
         <div class="subtitle">Productos</div>
         <h2 class="with-subtitle" style="margin-left: -1px;">Nuestro Catálogo</h2>
@@ -1135,7 +1137,7 @@
                 Robot pilaf namekian 18 grand scarface aka hame mercenary ha cacao. Papoi satan. Radar broly marron
                 future shinhan kame baba raspberry 17 super ha froug. Olibu radar. Nicky roshi fighter mr.
             </p>
-            <p><a href="#contacto" class="scroll" id="cotizacion-btn">Ponte en contacto con nosotros para realizar una contización</a></p>
+            <p><a href="#contacto" class="scroll btn btn-primary" id="cotizacion-btn">Realizar una contización</a></p>
         </div>
 
 
@@ -1265,7 +1267,7 @@
 
 </section>
 
-<section class="promos" id="promociones">
+<section class="promos" id="promociones hideable mostrador-only plomero-only constructora-only">
     <div class="container p-t-20">
         <div class=" margin-v">
             <div class="col-xs-12">
@@ -1350,7 +1352,7 @@
                 <div class="text-center">
                     <p style="margin-top:50px">Si tienes alguna pregunta o quieres conocer más sobre nuestras
                         promociones, visítanos en Facebook.</p>
-                    <a href="https://www.facebook.com/PlomeriaEspecializada/" target="_blank"
+                    <a href="https://www.facebook.com/profile.php?id=100007592927671&fref=ts" target="_blank"
                        class="fa fa-facebook social"></a>
                 </div>
 
@@ -1366,7 +1368,7 @@
             <div class="col-xs-12 col-md-offset-1 col-md-10">
                 <div class="subtitle" id="contacto">Contacto</div>
                 <h2 class="with-subtitle" style="margin-left: -1px;">Como encontrarnos</h2>
-                <p>Si estas interesado en nuestros servicios, no dudes en contactarnos</p>
+                <p>Nuestro equipo de ejecutivos estará feliz de atenderte</p>
             </div>
         </div>
     </div>
@@ -1393,8 +1395,7 @@
 
                         <div class="tab-content">
                             <div class="tab-pane active fade in show" id="mensaje" role="tabpanel" aria-labelledby="mensaje-tab">
-                                <form method="POST" action="/">
-                                    <input type="hidden" name="action" value="contact-form/send">
+                                <form method="POST" action="/" id="contact-form">
                                     <div class="row margin-v">
                                         <div class="col-xs-12 col-md-5">
                                             <label for="fromName">Nombre</label>
@@ -1409,7 +1410,7 @@
                                             <textarea id="message" name="message[body]" required="required"></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="button" id="contact-submit" class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span><span style="display: none;">
                                         <i class="fa fa-cog fa-spin"></i>
                                     </span>
@@ -1420,8 +1421,7 @@
                             </div>
 
                             <div class="tab-pane fade" id="cotizacion" role="tabpanel" aria-labelledby="cotizacion-tab">
-                                <form method="POST" action="/">
-                                    <input type="hidden" name="action" value="contact-form/send">
+                                <form method="POST" action="/" id="cotizacion-form">
                                     <div class="row margin-v">
                                         <div class="col-xs-12 col-md-5">
                                             <label for="fromName">Nombre</label>
@@ -1439,7 +1439,7 @@
                                             <textarea id="message" name="message[body]" required="required"></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="button" id="cotizacion-submit" class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span>
                                                 <span style="display: none;"><i class="fa fa-cog fa-spin"></i></span>
                                             </button>
@@ -1459,6 +1459,17 @@
                         <p class="p-l-30 m-t-0 m-b-10">
                             <i class="fa fa-absolute fa-envelope-o"></i>
                             contacto@afer.com</p>
+                        <div class="social">
+                            <h3>Redes Sociales</h3>
+                            <a href="https://www.facebook.com/profile.php?id=100007592927671&fref=ts" target="_blank"
+                                class="fa fa-facebook social"></a>
+                            <a href="#" target="_blank"
+                               class="fa fa-twitter social"></a>
+                            <a href="#" target="_blank"
+                               class="fa fa-youtube social"></a>
+                            <a href="#" target="_blank"
+                               class="fa fa-linkedin social"></a>
+                        </div>
                         <p class="m-b-20 m-t-auto">
                         </p>
                     </div>
@@ -1536,9 +1547,34 @@
         if ($(window).width() < 992) {
             offset = -270;
         }
+        // Functionality to show-hide sections when type is picked
+        function hideAll(){
+            $('.hideable').hide();
+        }
+
+        $('#plomero-btn').on('click', function(){
+            hideAll();
+            $('.plomero-only').show();
+        });
+
+        $('#constructor-btn').on('click', function(){
+            hideAll();
+            $('.constructora-only').show();
+        });
+
+        $('#client-btn').on('click', function(){
+            hideAll();
+            $('.mostrador-only').show();
+        });
+
+        $('#gobierno-btn').on('click', function(){
+            hideAll();
+            $('.gobierno-only').show();
+        });
+
         $('a.scroll[href*="#"]:not([href="#"])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
+                let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html, body').animate({
@@ -1548,6 +1584,7 @@
                 }
             }
         });
+
         // Mobile Nav auto-collapse
         $('.navbar a.nav-link').on('click', function () {
             if( $('.navbar-collapse').hasClass('show'))
@@ -1562,6 +1599,12 @@
         //    Adjust INICIO to be same size as Video-Wrapper on view
         let wrapper_height = $('.video-wrapper').height();
         $('#inicio').height(wrapper_height - 80);
+
+        //GO to proper form when cotizacion-btn is pressed
+        $('#cotizacion-btn').on('click', function(){
+            $('#cotizacion-tab').click();
+        });
+
 
         // Initialize Swiper Js
         let swiper = new Swiper('.swiper-container', {
@@ -1579,6 +1622,28 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+
+        // Handle Contact Form
+        $('#contact-submit').click(function(){
+            $(this).prop( "disabled", true );
+            $.post( "/contact-mail", $( "#contact-form" ).serialize(), function(data){
+                if(data.mail){
+                    $('#contact-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
+                    $(this).prop( "disabled", false );
+                }
+            });
+        });
+
+        $('#cotizacion-submit').click(function(){
+            $(this).prop( "disabled", true );
+            $.post( "/products-mail", $( "#cotizacion-form" ).serialize(), function(data){
+                if(data.mail){
+                    $('#cotizacion-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
+                    $(this).prop( "disabled", false );
+                }
+            });
+        })
     });
 
 

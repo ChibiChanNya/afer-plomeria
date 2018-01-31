@@ -17,7 +17,7 @@ router.post('/contact-mail', function(req, res, next){
 
     let data = {
         from: 'Formulario de Contacto AFER <form-contacto-afer@afer.mx>',
-        to: 'mostrador@aferplomeria.com',
+        to: 'andre@notecode.mx',
         subject: 'Has sido contactado por un usuario de aferplomeria.com',
         text: 'Nombre : ' + req.body.name + '\n'
             + 'Dirección de Correo : ' + req.body.email + '\n'
@@ -40,7 +40,7 @@ router.post('/products-mail', function(req, res, next){
 
     let data = {
         from: 'Formulario de Contacto AFER <form-contacto-afer@afer.mx>',
-        to: 'hola@aferplomeria.com',
+        to: 'andre@notecode.mx',
         subject: 'Han solicitado una cotización desde aferplomeria.com',
         text: 'Nombre : ' + req.body.name + '\n'
         + 'Dirección de Correo : ' + req.body.email + '\n'

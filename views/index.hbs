@@ -1399,18 +1399,18 @@
                                     <div class="row margin-v">
                                         <div class="col-xs-12 col-md-5">
                                             <label for="fromName">Nombre</label>
-                                            <input id="name" type="text" name="fromName" required="required"></div>
+                                            <input id="name" type="text" name="fromName" required></div>
                                         <div class="col-xs-12 col-md-5 col-md-offset-2">
                                             <label for="fromEmail">Correo Electrónico</label>
-                                            <input id="email" type="email" name="fromEmail" required="required"></div>
+                                            <input id="email" type="email" name="fromEmail" required></div>
                                         <div class="col-xs-12 col-md-5"><label for="message[Phone]">Teléfono</label>
-                                            <input id="phone" type="text" name="message[Phone]" required="required">
+                                            <input id="phone" type="text" name="message[Phone]" required>
                                         </div>
                                         <div class="col-xs-12 col-md-9"><label for="message[body]">Mensaje</label>
-                                            <textarea id="message" name="message[body]" required="required"></textarea>
+                                            <textarea id="message" name="message[body]" required></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="button" id="contact-submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="submit" id="contact-submit" class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span><span style="display: none;">
                                         <i class="fa fa-cog fa-spin"></i>
                                     </span>
@@ -1425,21 +1425,21 @@
                                     <div class="row margin-v">
                                         <div class="col-xs-12 col-md-5">
                                             <label for="fromName">Nombre</label>
-                                            <input id="name" type="text" name="fromName" required="required"></div>
+                                            <input id="name" type="text" name="fromName" required></div>
                                         <div class="col-xs-12 col-md-5 col-md-offset-2">
                                             <label for="fromEmail">Correo Electrónico</label>
-                                            <input id="email" type="email" name="fromEmail" required="required"></div>
+                                            <input id="email" type="email" name="fromEmail" required></div>
                                         <div class="col-xs-12 col-md-5"><label for="message[Phone]">Teléfono</label>
-                                            <input id="phone" type="text" name="message[Phone]" required="required">
+                                            <input id="phone" type="text" name="message[Phone]" required>
                                         </div>
                                         <div class="col-xs-12 col-md-5 col-md-offset-2"><label for="message[Company]">Compañía</label>
-                                            <input id="company" type="text" name="message[Company]" required="required">
+                                            <input id="company" type="text" name="message[Company]" required>
                                         </div>
                                         <div class="col-xs-12 col-md-9"><label for="message[body]">Materiales a cotizar</label>
-                                            <textarea id="message" name="message[body]" required="required"></textarea>
+                                            <textarea id="message" name="message[body]" required></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="button" id="cotizacion-submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="submit" id="cotizacion-submit" class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span>
                                                 <span style="display: none;"><i class="fa fa-cog fa-spin"></i></span>
                                             </button>
@@ -1625,25 +1625,30 @@
 
 
         // Handle Contact Form
-        $('#contact-submit').click(function(){
-            $(this).prop( "disabled", true );
+        $('#contact-form').submit(function(){
+            $('#contact-submit').prop( "disabled", true );
             $.post( "/contact-mail", $( "#contact-form" ).serialize(), function(data){
                 if(data.mail){
                     $('#contact-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
-                    $(this).prop( "disabled", false );
+                    console.log("SENT!");
+                    $('#contact-submit').prop( "disabled", true );
                 }
             });
+            return false;
         });
 
-        $('#cotizacion-submit').click(function(){
-            $(this).prop( "disabled", true );
+        $('#cotizacion-form').submit(function(){
+            $('#cotizacion-submit').prop( "disabled", true );
             $.post( "/products-mail", $( "#cotizacion-form" ).serialize(), function(data){
                 if(data.mail){
                     $('#cotizacion-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
-                    $(this).prop( "disabled", false );
+                    console.log("SENT!");
+                    $('#cotizacion-submit').prop( "disabled", false );
                 }
             });
+            return false;
         })
+
     });
 
 

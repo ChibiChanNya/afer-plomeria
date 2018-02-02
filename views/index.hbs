@@ -14,7 +14,7 @@
                 <a class="nav-link scroll" href="#top">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item pad-h hideable gobierno-only">
-                <a class="nav-link scroll" href="#nosotros">Nosotros</a>
+                <a class="nav-link  scroll" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item pad-h hidden-while-collapses-nav hideable gobierno-only constructora-only mostrador-only">
                 <a class="nav-link scroll" href="#servicios">Por qué elegirnos</a>
@@ -22,8 +22,8 @@
             <li class="nav-item pad-h hidden-except-collapses-nav hideable gobierno-only constructora-only mostrador-only">
                 <a class="nav-link scroll" href="#servicios-mobile">Por qué elegirnos</a>
             </li>
-            <li class="nav-item pad-h">
-                <a class="nav-link scroll hideable constructora-only plomero-only mostrador-only" href="#soluciones">Soluciones</a>
+            <li class="nav-item pad-h hideable constructora-only plomero-only mostrador-only">
+                <a class="nav-link scroll " href="#soluciones">Soluciones</a>
             </li>
             <li class="nav-item pad-h hideable mostrador-only constructora-only plomero-only gobierno-only">
                 <a class="nav-link scroll" href="#productos">Catálogos</a>
@@ -32,7 +32,7 @@
                 <a class="nav-link scroll" href="#promociones">Promociones</a>
             </li>
             <li class="nav-item pad-h">
-                <a class="nav-link scroll" href="#contacto">Contacto</a>
+                <a class="nav-link  scroll" href="#contacto">Contacto</a>
             </li>
         </ul>
     </div>
@@ -60,18 +60,24 @@
                     <p>“Más que productos, soluciones”</p>
                 </div>
             </div>
-            <a href="#soluciones" id="plomero-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"> <img
-                    class="svg" style="height:30px;margin-top:-5px" src="/images/bombero.png" >Plomero</a>
-            <a href="#soluciones" id="constructor-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 scroll"><img class="svg"
-                                                                                                         style="height:30px;margin-top:-5px"
-                                                                                                         src="/images/maquina.png">
-                Constructor</a>
-            <a href="#soluciones" id="client-btn"
-               class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"><img class="svg"
-                                                                                                style="height:30px;margin-top:-5px"
-                                                                                                src="/images/cliente.svg">Mostrador</a>
+            <a href="#soluciones" id="plomero-btn"
+               class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll bar-link">
+                <img class="svg" style="height:30px;margin-top:-5px" src="/images/bombero.png">Plomero</a>
 
-            <a href="#nosotros" id="gobierno-btn" class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll"><img
+            <a href="#soluciones" id="constructor-btn bar-link"
+               class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 scroll bar-link">
+                <img class="svg"
+                     style="height:30px;margin-top:-5px"
+                     src="/images/maquina.png"> Constructor</a>
+
+            <a href="#soluciones" id="client-btn"
+               class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll bar-link">
+                <img class="svg"
+                     style="height:30px;margin-top:-5px"
+                     src="/images/cliente.svg">Mostrador</a>
+
+            <a href="#nosotros" id="gobierno-btn"
+               class="btn btn-primary pad-h col-lg-2 col-md-3 col-xs-5 text-center scroll bar-link"><img
                     class="svg" style="height:30px;margin-top:-5px" src="/images/partenon.svg">Gobierno</a>
         </div>
     </div>
@@ -246,7 +252,8 @@
     </div>
 </section>
 
-<section id="servicios-mobile" class="services services-mobile hidden-md-up section-m-b hideable gobierno-only constructor-only mostrador-only">
+<section id="servicios-mobile"
+         class="services services-mobile hidden-md-up section-m-b hideable gobierno-only constructor-only mostrador-only">
     <div class="container">
         <div class="subtitle">Por qué elegirnos</div>
         <h2 class="with-subtitle">Ofrecemos más</h2>
@@ -360,217 +367,226 @@
             <div class="card-group">
                 <!-- FIRST BLOCK WITH 4 ACCORDIONS-->
                 <!--<div class="col-md-4 display-flex">-->
-                    <div class="card">
-                        <div class="card-block">
-                            <h3 class="card-title">Tubería y conexiónes</h3>
-                            <div id="plomeroB" role="tablist" aria-multiselectable="true">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingBOne">
-                                        <h5 class="mb-0">
-                                            <a data-toggle="collapse" data-parent="#plomeroB" href="#collapsePB1" aria-expanded="true" aria-controls="collapsePB1">
-                                                Tuboplus
-                                            </a>
-                                        </h5>
-                                    </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">Tubería y conexiónes</h3>
+                        <div id="plomeroB" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingBOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#plomeroB" href="#collapsePB1"
+                                           aria-expanded="true" aria-controls="collapsePB1">
+                                            Tuboplus
+                                        </a>
+                                    </h5>
+                                </div>
 
-                                    <div id="collapsePB1" class="collapse" role="tabpanel" aria-labelledby="headingBOne">
-                                        <div class="card-block">
-                                            <h4>Medidas (pulgadas)</h4>
-                                            <ul class="wrapping-list">
-                                                <li>1/2 ''</li>
-                                                <li>3/4 ''</li>
-                                                <li>1 - 1/4 ''</li>
-                                                <li>2 ''</li>
-                                                <li>3 ''</li>
-                                                <li>2 - 1/2 ''</li>
-                                                <li>Pregunta por otras medidas</li>
-                                            </ul>
-                                            <img class="logo-sm" src="/images/logo-full.png">
+                                <div id="collapsePB1" class="collapse" role="tabpanel" aria-labelledby="headingBOne">
+                                    <div class="card-block">
+                                        <h4>Medidas (pulgadas)</h4>
+                                        <ul class="wrapping-list">
+                                            <li>1/2 ''</li>
+                                            <li>3/4 ''</li>
+                                            <li>1 - 1/4 ''</li>
+                                            <li>2 ''</li>
+                                            <li>3 ''</li>
+                                            <li>2 - 1/2 ''</li>
+                                            <li>Pregunta por otras medidas</li>
+                                        </ul>
+                                        <img class="logo-sm" src="/images/logo-full.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingBTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB"
+                                           href="#collapsePB2" aria-expanded="false" aria-controls="collapsePB2">
+                                            Valvulería
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapsePB2" class="collapse" role="tabpanel" aria-labelledby="headingBTwo">
+                                    <div class="card-block">
+                                        <h4>Marcas</h4>
+                                        <div class="logo-wrap">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingBTwo">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB" href="#collapsePB2" aria-expanded="false" aria-controls="collapsePB2">
-                                                Valvulería
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePB2" class="collapse" role="tabpanel" aria-labelledby="headingBTwo">
-                                        <div class="card-block">
-                                            <h4>Marcas</h4>
-                                            <div class="logo-wrap">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingBThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB"
+                                           href="#collapsePB3" aria-expanded="false" aria-controls="collapsePB3">
+                                            Abrazaderas
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapsePB3" class="collapse" role="tabpanel" aria-labelledby="headingBThree">
+                                    <div class="card-block">
+                                        <h4>Coplasa</h4>
+                                        <ul class="wrapping-list">
+                                            <li>3'' salida 1/2</li>
+                                            <li>3'' salida 3/4</li>
+                                        </ul>
+                                        <img class="logo-sm" src="/images/logo-full.png">
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingBThree">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB" href="#collapsePB3" aria-expanded="false" aria-controls="collapsePB3">
-                                                Abrazaderas
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePB3" class="collapse" role="tabpanel" aria-labelledby="headingBThree">
-                                        <div class="card-block">
-                                            <h4>Coplasa</h4>
-                                            <ul class="wrapping-list">
-                                                <li>3'' salida 1/2</li>
-                                                <li>3'' salida 3/4</li>
-                                            </ul>
-                                            <img class="logo-sm" src="/images/logo-full.png">
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingBFour">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB"
+                                           href="#collapsePB4" aria-expanded="false" aria-controls="collapsePB4">
+                                            Grifería
+                                        </a>
+                                    </h5>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingBFour">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroB" href="#collapsePB4" aria-expanded="false" aria-controls="collapsePB4">
-                                                Grifería
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePB4" class="collapse" role="tabpanel" aria-labelledby="headingBFour">
-                                        <div class="card-block">
-                                            <h4>Marcas</h4>
-                                            <div class="logo-wrap">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                                <img src="/images/logo-full.png">
-                                            </div>
+                                <div id="collapsePB4" class="collapse" role="tabpanel" aria-labelledby="headingBFour">
+                                    <div class="card-block">
+                                        <h4>Marcas</h4>
+                                        <div class="logo-wrap">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
+                                            <img src="/images/logo-full.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 <!--</div>-->
                 <!-- SECOND BLOCK -->
                 <!--<div class="col-md-4 display-flex">-->
-                    <div class="card">
-                        <div class="card-block">
-                            <h3 class="card-title">PVC Y CPVC</h3>
-                            <div id="plomeroC" role="tablist" aria-multiselectable="true">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingCOne">
-                                        <h5 class="mb-0">
-                                            <a data-toggle="collapse" data-parent="#plomeroC" href="#collapsePC1" aria-expanded="true" aria-controls="collapsePC1">
-                                                Hidráulico
-                                            </a>
-                                        </h5>
-                                    </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">PVC Y CPVC</h3>
+                        <div id="plomeroC" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingCOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#plomeroC" href="#collapsePC1"
+                                           aria-expanded="true" aria-controls="collapsePC1">
+                                            Hidráulico
+                                        </a>
+                                    </h5>
+                                </div>
 
-                                    <div id="collapsePC1" class="collapse" role="tabpanel" aria-labelledby="headingCOne">
-                                        <div class="card-block">
-                                            <ul class="wrapping-list">
-                                                <li>Cédula 7</li>
-                                                <li>Cédula 40</li>
-                                                <li>Cédula 80</li>
-                                                <li>Pregunta por otros</li>
-                                            </ul>
-                                            <img class="logo-sm" src="/images/logo-full.png">
-                                        </div>
+                                <div id="collapsePC1" class="collapse" role="tabpanel" aria-labelledby="headingCOne">
+                                    <div class="card-block">
+                                        <ul class="wrapping-list">
+                                            <li>Cédula 7</li>
+                                            <li>Cédula 40</li>
+                                            <li>Cédula 80</li>
+                                            <li>Pregunta por otros</li>
+                                        </ul>
+                                        <img class="logo-sm" src="/images/logo-full.png">
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingCTwo">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroC" href="#collapsePC2" aria-expanded="false" aria-controls="collapsePC2">
-                                                Alcantarillado
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePC2" class="collapse" role="tabpanel" aria-labelledby="headingCTwo">
-                                        <div class="card-block">
-                                            <ul class="wrapping-list">
-                                                <li>Serie 20, 4''</li>
-                                                <li>Serie 20, 8''</li>
-                                                <li>Serie 20, 10''</li>
-                                                <li>Serie 20, 12''</li>
-                                            </ul>
-                                            <img class="logo-sm" src="/images/logo-full.png">
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingCTwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroC"
+                                           href="#collapsePC2" aria-expanded="false" aria-controls="collapsePC2">
+                                            Alcantarillado
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapsePC2" class="collapse" role="tabpanel" aria-labelledby="headingCTwo">
+                                    <div class="card-block">
+                                        <ul class="wrapping-list">
+                                            <li>Serie 20, 4''</li>
+                                            <li>Serie 20, 8''</li>
+                                            <li>Serie 20, 10''</li>
+                                            <li>Serie 20, 12''</li>
+                                        </ul>
+                                        <img class="logo-sm" src="/images/logo-full.png">
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingCThree">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroC" href="#collapsePC3" aria-expanded="false" aria-controls="collapsePC3">
-                                                Sanitario
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePC3" class="collapse" role="tabpanel" aria-labelledby="headingCThree">
-                                        <div class="card-block">
-                                            <ul class="wrapping-list">
-                                                <li>Norma de 2''</li>
-                                                <li>Norma de 4''</li>
-                                                <li>Norma de 6''</li>
-                                                <li>Norma de 8''</li>
-                                            </ul>
-                                            <img class="logo-sm" src="/images/logo-full.png">
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingCThree">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroC"
+                                           href="#collapsePC3" aria-expanded="false" aria-controls="collapsePC3">
+                                            Sanitario
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapsePC3" class="collapse" role="tabpanel" aria-labelledby="headingCThree">
+                                    <div class="card-block">
+                                        <ul class="wrapping-list">
+                                            <li>Norma de 2''</li>
+                                            <li>Norma de 4''</li>
+                                            <li>Norma de 6''</li>
+                                            <li>Norma de 8''</li>
+                                        </ul>
+                                        <img class="logo-sm" src="/images/logo-full.png">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 <!--</div>-->
                 <!--THIRD BLOCK -->
                 <!--<div class="col-md-4 display-flex">-->
-                    <div class="card">
-                        <div class="card-block">
-                            <h3 class="card-title">Otros</h3>
-                            <div id="plomeroA" role="tablist" aria-multiselectable="true">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingAOne">
-                                        <h5 class="mb-0">
-                                            <a data-toggle="collapse" data-parent="#plomeroA" href="#collapsePA1" aria-expanded="true" aria-controls="collapsePA1">
-                                                Tinacos
-                                            </a>
-                                        </h5>
-                                    </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">Otros</h3>
+                        <div id="plomeroA" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingAOne">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#plomeroA" href="#collapsePA1"
+                                           aria-expanded="true" aria-controls="collapsePA1">
+                                            Tinacos
+                                        </a>
+                                    </h5>
+                                </div>
 
-                                    <div id="collapsePA1" class="collapse" role="tabpanel" aria-labelledby="headingAOne">
-                                        <div class="card-block">
-                                            <h4>Rotoplas</h4>
-                                            <ul class="wrapping-list">
-                                                <li>750 litros</li>
-                                                <li>1100 litros</li>
-                                            </ul>
-                                        </div>
+                                <div id="collapsePA1" class="collapse" role="tabpanel" aria-labelledby="headingAOne">
+                                    <div class="card-block">
+                                        <h4>Rotoplas</h4>
+                                        <ul class="wrapping-list">
+                                            <li>750 litros</li>
+                                            <li>1100 litros</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingATwo">
-                                        <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#plomeroA" href="#collapsePA2" aria-expanded="false" aria-controls="collapsePA2">
-                                                Cisternas
-                                            </a>
-                                        </h5>
-                                    </div>
-                                    <div id="collapsePA2" class="collapse" role="tabpanel" aria-labelledby="headingATwo">
-                                        <div class="card-block">
-                                            <h4>Rotoplas</h4>
-                                            <ul class="wrapping-list">
-                                                <li>1200 litros</li>
-                                                <li>2800 litros</li>
-                                                <li>5000 litros</li>
-                                                <li>10000 litros</li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="headingATwo">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#plomeroA"
+                                           href="#collapsePA2" aria-expanded="false" aria-controls="collapsePA2">
+                                            Cisternas
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="collapsePA2" class="collapse" role="tabpanel" aria-labelledby="headingATwo">
+                                    <div class="card-block">
+                                        <h4>Rotoplas</h4>
+                                        <ul class="wrapping-list">
+                                            <li>1200 litros</li>
+                                            <li>2800 litros</li>
+                                            <li>5000 litros</li>
+                                            <li>10000 litros</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 <!--</div>-->
             </div>
         </div>
@@ -589,7 +605,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB1" aria-expanded="true" aria-controls="collapseMB1">
+                                        <a data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB1"
+                                           aria-expanded="true" aria-controls="collapseMB1">
                                             Mezcladores
                                         </a>
                                     </h5>
@@ -610,7 +627,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB2" aria-expanded="false" aria-controls="collapseMB2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB2" aria-expanded="false" aria-controls="collapseMB2">
                                             Llaves de retención
                                         </a>
                                     </h5>
@@ -630,7 +648,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBThree">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB3" aria-expanded="false" aria-controls="collapseMB3">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB3" aria-expanded="false" aria-controls="collapseMB3">
                                             Mangueras de boiler
                                         </a>
                                     </h5>
@@ -650,7 +669,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBFour">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB4" aria-expanded="false" aria-controls="collapseMB4">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB4" aria-expanded="false" aria-controls="collapseMB4">
                                             Regaderas
                                         </a>
                                     </h5>
@@ -670,7 +690,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBFive">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB5" aria-expanded="false" aria-controls="collapseMB5">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB5" aria-expanded="false" aria-controls="collapseMB5">
                                             Contracanastas
                                         </a>
                                     </h5>
@@ -690,7 +711,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBSix">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB6" aria-expanded="false" aria-controls="collapseMB6">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB6" aria-expanded="false" aria-controls="collapseMB6">
                                             Mangueras de lavabo
                                         </a>
                                     </h5>
@@ -710,7 +732,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBSeven">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMB7" aria-expanded="false" aria-controls="collapseMB7">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                           href="#collapseMB7" aria-expanded="false" aria-controls="collapseMB7">
                                             Mangueras de fregador
                                         </a>
                                     </h5>
@@ -740,7 +763,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMCOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#mostradorC" href="#collapseMC1" aria-expanded="true" aria-controls="collapseMC1">
+                                        <a data-toggle="collapse" data-parent="#mostradorC" href="#collapseMC1"
+                                           aria-expanded="true" aria-controls="collapseMC1">
                                             Llaves
                                         </a>
                                     </h5>
@@ -761,7 +785,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMCTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorC" href="#collapseMC2" aria-expanded="false" aria-controls="collapseMC2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorC"
+                                           href="#collapseMC2" aria-expanded="false" aria-controls="collapseMC2">
                                             Martillos
                                         </a>
                                     </h5>
@@ -781,7 +806,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMCThree">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorC" href="#collapseMC3" aria-expanded="false" aria-controls="collapseMC3">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorC"
+                                           href="#collapseMC3" aria-expanded="false" aria-controls="collapseMC3">
                                             Cintas métricas
                                         </a>
                                     </h5>
@@ -800,12 +826,14 @@
                                 <div class="card">
                                     <div class="card-header" role="tab" id="headingMCFour">
                                         <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMC4" aria-expanded="false" aria-controls="collapseMC4">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                               href="#collapseMC4" aria-expanded="false" aria-controls="collapseMC4">
                                                 Desarmadores
                                             </a>
                                         </h5>
                                     </div>
-                                    <div id="collapseMC4" class="collapse" role="tabpanel" aria-labelledby="headingMCFour">
+                                    <div id="collapseMC4" class="collapse" role="tabpanel"
+                                         aria-labelledby="headingMCFour">
                                         <div class="card-block">
                                             <h4>Marcas</h4>
                                             <div class="logo-wrap">
@@ -820,12 +848,14 @@
                                 <div class="card">
                                     <div class="card-header" role="tab" id="headingMCFive">
                                         <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMC5" aria-expanded="false" aria-controls="collapseMC5">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                               href="#collapseMC5" aria-expanded="false" aria-controls="collapseMC5">
                                                 Pinzas perico
                                             </a>
                                         </h5>
                                     </div>
-                                    <div id="collapseMC5" class="collapse" role="tabpanel" aria-labelledby="headingMCFive">
+                                    <div id="collapseMC5" class="collapse" role="tabpanel"
+                                         aria-labelledby="headingMCFive">
                                         <div class="card-block">
                                             <h4>Marcas</h4>
                                             <div class="logo-wrap">
@@ -840,12 +870,14 @@
                                 <div class="card">
                                     <div class="card-header" role="tab" id="headingMCSix">
                                         <h5 class="mb-0">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB" href="#collapseMC6" aria-expanded="false" aria-controls="collapseMC6">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#mostradorB"
+                                               href="#collapseMC6" aria-expanded="false" aria-controls="collapseMC6">
                                                 Pinzas perras
                                             </a>
                                         </h5>
                                     </div>
-                                    <div id="collapseMC6" class="collapse" role="tabpanel" aria-labelledby="headingMCSix">
+                                    <div id="collapseMC6" class="collapse" role="tabpanel"
+                                         aria-labelledby="headingMCSix">
                                         <div class="card-block">
                                             <h4>Marcas</h4>
                                             <div class="logo-wrap">
@@ -871,7 +903,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA1" aria-expanded="true" aria-controls="collapseMA1">
+                                        <a data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA1"
+                                           aria-expanded="true" aria-controls="collapseMA1">
                                             Hidroneumáticos
                                         </a>
                                     </h5>
@@ -892,7 +925,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBTwo">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA2" aria-expanded="false" aria-controls="collapseMA2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA2" aria-expanded="false" aria-controls="collapseMA2">
                                             Boilers
                                         </a>
                                     </h5>
@@ -912,7 +946,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBThree">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA3" aria-expanded="false" aria-controls="collapseMA3">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA3" aria-expanded="false" aria-controls="collapseMA3">
                                             Impermeabilizantes
                                         </a>
                                     </h5>
@@ -932,7 +967,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBFour">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA4" aria-expanded="false" aria-controls="collapseMA4">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA4" aria-expanded="false" aria-controls="collapseMA4">
                                             Tinácos
                                         </a>
                                     </h5>
@@ -952,7 +988,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBFive">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA5" aria-expanded="false" aria-controls="collapseMA5">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA5" aria-expanded="false" aria-controls="collapseMA5">
                                             Brochas
                                         </a>
                                     </h5>
@@ -972,7 +1009,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBSix">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA6" aria-expanded="false" aria-controls="collapseMA6">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA6" aria-expanded="false" aria-controls="collapseMA6">
                                             Bases para tinácos
                                         </a>
                                     </h5>
@@ -992,7 +1030,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingMBSeven">
                                     <h5 class="mb-0">
-                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA" href="#collapseMA7" aria-expanded="false" aria-controls="collapseMA7">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#mostradorA"
+                                           href="#collapseMA7" aria-expanded="false" aria-controls="collapseMA7">
                                             Rodillos
                                         </a>
                                     </h5>
@@ -1031,7 +1070,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingBOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#constructoraB" href="#collapseCB1" aria-expanded="true" aria-controls="collapseCB1">
+                                        <a data-toggle="collapse" data-parent="#constructoraB" href="#collapseCB1"
+                                           aria-expanded="true" aria-controls="collapseCB1">
                                             Ver productos
                                         </a>
                                     </h5>
@@ -1039,7 +1079,7 @@
 
                                 <div id="collapseCB1" class="collapse" role="tabpanel" aria-labelledby="headingBOne">
                                     <div class="card-block">
-                                        <ul >
+                                        <ul>
                                             <li>Cople galvanizado</li>
                                             <li>Niple galvanizado</li>
                                             <li>Conexiones galvanizado</li>
@@ -1062,7 +1102,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingCOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#constructoraC" href="#collapseCC1" aria-expanded="true" aria-controls="collapseCC1">
+                                        <a data-toggle="collapse" data-parent="#constructoraC" href="#collapseCC1"
+                                           aria-expanded="true" aria-controls="collapseCC1">
                                             Ver productos
                                         </a>
                                     </h5>
@@ -1091,7 +1132,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingAOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#constructoraA" href="#collapseCA1" aria-expanded="true" aria-controls="collapseCA1">
+                                        <a data-toggle="collapse" data-parent="#constructoraA" href="#collapseCA1"
+                                           aria-expanded="true" aria-controls="collapseCA1">
                                             Ver productos
                                         </a>
                                     </h5>
@@ -1139,7 +1181,8 @@
                             <div class="card">
                                 <div class="card-header" role="tab" id="headingDOne">
                                     <h5 class="mb-0">
-                                        <a data-toggle="collapse" data-parent="#constructoraD" href="#collapseCD1" aria-expanded="true" aria-controls="collapseCD1">
+                                        <a data-toggle="collapse" data-parent="#constructoraD" href="#collapseCD1"
+                                           aria-expanded="true" aria-controls="collapseCD1">
                                             Ver productos
                                         </a>
                                     </h5>
@@ -1147,7 +1190,7 @@
 
                                 <div id="collapseCD1" class="collapse" role="tabpanel" aria-labelledby="headingDOne">
                                     <div class="card-block">
-                                        <ul >
+                                        <ul>
                                             <img class="logo-xs" src="/images/logo-full.png">
                                             <li>Bombas Rotoplas</li>
                                             <li>Tinacos Rotoplas</li>
@@ -1172,7 +1215,8 @@
 
 </section>
 
-<section id="productos" class="products section-m-b hideable gobierno-only mostrador-only plomero-only constructora-only">
+<section id="productos"
+         class="products section-m-b hideable gobierno-only mostrador-only plomero-only constructora-only">
     <div class="container">
         <div class="subtitle">Productos</div>
         <h2 class="with-subtitle" style="margin-left: -1px;">Nuestro Catálogo</h2>
@@ -1436,7 +1480,8 @@
                         <h3 class="submitted" style="display: none;">Gracias por ponerte en contacto con nosotros.</h3>
 
                         <div class="tab-content">
-                            <div class="tab-pane active fade in show" id="mensaje" role="tabpanel" aria-labelledby="mensaje-tab">
+                            <div class="tab-pane active fade in show" id="mensaje" role="tabpanel"
+                                 aria-labelledby="mensaje-tab">
                                 <form method="POST" action="/" id="contact-form">
                                     <div class="row margin-v">
                                         <div class="col-xs-12 col-md-5">
@@ -1452,7 +1497,8 @@
                                             <textarea id="message" name="message[body]" required></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="submit" id="contact-submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="submit" id="contact-submit"
+                                                    class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span><span style="display: none;">
                                         <i class="fa fa-cog fa-spin"></i>
                                     </span>
@@ -1477,11 +1523,13 @@
                                         <div class="col-xs-12 col-md-5 col-md-offset-2"><label for="message[Company]">Compañía</label>
                                             <input id="company" type="text" name="message[Company]" required>
                                         </div>
-                                        <div class="col-xs-12 col-md-9"><label for="message[body]">Materiales a cotizar</label>
+                                        <div class="col-xs-12 col-md-9"><label for="message[body]">Materiales a
+                                            cotizar</label>
                                             <textarea id="message" name="message[body]" required></textarea>
                                         </div>
                                         <div class="col-xs-12 col-md-3 display-flex">
-                                            <button type="submit" id="cotizacion-submit" class="btn btn-primary-square m-b-25 m-t-auto">
+                                            <button type="submit" id="cotizacion-submit"
+                                                    class="btn btn-primary-square m-b-25 m-t-auto">
                                                 <span>Enviar</span>
                                                 <span style="display: none;"><i class="fa fa-cog fa-spin"></i></span>
                                             </button>
@@ -1507,7 +1555,7 @@
                         <div class="social">
                             <h3>Redes Sociales</h3>
                             <a href="https://www.facebook.com/profile.php?id=100007592927671&fref=ts" target="_blank"
-                                class="fa fa-facebook social"></a>
+                               class="fa fa-facebook social"></a>
                             <a href="#" target="_blank"
                                class="fa fa-twitter social"></a>
                             <a href="#" target="_blank"
@@ -1599,38 +1647,43 @@
         if ($(window).width() < 992) {
             offset = -360;
         }
+
         // Functionality to show-hide sections when type is picked
-        function hideAll(){
+        function hideAll() {
             $('.hideable').hide();
         }
 
-        $('#plomero-btn').on('click', function(){
+        $('#plomero-btn').on('click', function () {
             hideAll();
             $('.plomero-only').show();
         });
 
-        $('#constructor-btn').on('click', function(){
+        $('#constructor-btn').on('click', function () {
             hideAll();
             $('.constructora-only').show();
         });
 
-        $('#client-btn').on('click', function(){
+        $('#client-btn').on('click', function () {
             hideAll();
             $('.mostrador-only').show();
         });
 
-        $('#gobierno-btn').on('click', function(){
+        $('#gobierno-btn').on('click', function () {
             hideAll();
             $('.gobierno-only').show();
         });
 
         $('a.scroll[href*="#"]:not([href="#"])').click(function () {
+            let this_offset = offset;
+            if ($(this).hasClass('bar-link') && $(window).width() < 992){
+                this_offset= -100;
+            }
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                 let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top + offset
+                        scrollTop: target.offset().top + this_offset
                     }, 1000);
                     return false;
                 }
@@ -1639,7 +1692,7 @@
 
         // Mobile Nav auto-collapse
         $('.navbar a.nav-link').on('click', function () {
-            if( $('.navbar-collapse').hasClass('show'))
+            if ($('.navbar-collapse').hasClass('show'))
                 $('.navbar-toggler').click(); //bootstrap 4.x by Richard
         });
 
@@ -1653,7 +1706,7 @@
         $('#inicio').height(wrapper_height - 180);
 
         //GO to proper form when cotizacion-btn is pressed
-        $('#cotizacion-btn').on('click', function(){
+        $('#cotizacion-btn').on('click', function () {
             $('#cotizacion-tab').click();
         });
 
@@ -1677,25 +1730,25 @@
 
 
         // Handle Contact Form
-        $('#contact-form').submit(function(){
-            $('#contact-submit').prop( "disabled", true );
-            $.post( "/contact-mail", $( "#contact-form" ).serialize(), function(data){
-                if(data.mail){
+        $('#contact-form').submit(function () {
+            $('#contact-submit').prop("disabled", true);
+            $.post("/contact-mail", $("#contact-form").serialize(), function (data) {
+                if (data.mail) {
                     $('#contact-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
                     console.log("SENT!");
-                    $('#contact-submit').prop( "disabled", true );
+                    $('#contact-submit').prop("disabled", true);
                 }
             });
             return false;
         });
 
-        $('#cotizacion-form').submit(function(){
-            $('#cotizacion-submit').prop( "disabled", true );
-            $.post( "/products-mail", $( "#cotizacion-form" ).serialize(), function(data){
-                if(data.mail){
+        $('#cotizacion-form').submit(function () {
+            $('#cotizacion-submit').prop("disabled", true);
+            $.post("/products-mail", $("#cotizacion-form").serialize(), function (data) {
+                if (data.mail) {
                     $('#cotizacion-form .row').append('<p class="blue">Tu mensaje ha sido enviado. Gracias por comunicarte con nosotros.</p>');
                     console.log("SENT!");
-                    $('#cotizacion-submit').prop( "disabled", false );
+                    $('#cotizacion-submit').prop("disabled", false);
                 }
             });
             return false;

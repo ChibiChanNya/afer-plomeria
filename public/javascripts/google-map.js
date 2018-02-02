@@ -284,7 +284,7 @@ let GoogleMap = function () {
 
                 //Afer Plomería Especializada, Blvd. J. Fuentes Mares 9802, Juárez, 31064 Chihuahua, Chih.
                 return [
-                    'Blvd. J. Fuentes Mares 9802, <br> Juárez, 31064, <br>  Chihuahua, Chih.'
+                    'Blvd. J. Fuentes Mares 9802, <br>Col. Villa Juárez, 31064, <br>  Chihuahua, Chih.'
                 ].join('<br>');
             }
 

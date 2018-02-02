@@ -17,7 +17,7 @@ router.post('/contact-mail', function(req, res, next){
 
     let data = {
         from: 'Formulario de Contacto AFER <forma-contacto-afer@afer.mx>',
-        to: 'mostrador@aferplomeria.com',
+        to: 'mostrador1@aferplomeria.com',
         subject: 'Has sido contactado por un usuario de aferplomeria.com',
         text: 'Nombre : ' + req.body.name + '\n'
             + 'Dirección de Correo : ' + req.body.email + '\n'

@@ -251,8 +251,6 @@ a:not([href]):not([tabindex])
       font-size: 32px
 
 
-
-
   .logo
     svg
       fill: #fff
@@ -561,6 +559,9 @@ a:not([href]):not([tabindex])
         h4
           font-size: 1.3em
 
+.logo-wrap
+  img
+    max-width: 200px
 ul.wrapping-list
 
   li
@@ -569,7 +570,7 @@ ul.wrapping-list
 
   &.big-margin
     li
-      margin: 10px 40px
+      margin: 10px 35px
 
 // PRODUCTS
 .card-deck .card
@@ -598,10 +599,10 @@ ul.wrapping-list
   width: 100%
   height: 100%
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev
-  background-image: url('/images/right-arrow.png') !important
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next
-  background-image: url('/images/left-arrow.png') !important
+.swiper-button-next
+  right: 0
+.swiper-button-prev
+  left: 0
 
 .swiper-slide 
   text-align: center
@@ -620,6 +621,22 @@ ul.wrapping-list
   -ms-flex-align: center
   -webkit-align-items: center
   align-items: center
+
+  img
+    width: 20vw
+
+  @media screen and (min-width: $break-md)
+    img
+      width: 15vw
+
+@media screen and (min-width: $break-md)
+  .swiper-button-next
+    background-image: url('/images/right-arrow.png') !important
+    right: 10px
+  .swiper-button-prev
+    background-image: url('/images/left-arrow.png') !important
+    left: 10px
+
 
 
 // PROMOTIONS
@@ -764,7 +781,7 @@ ul.wrapping-list
 
   h3
     color: #fff
-    margin: 35px 0 30px
+    margin: 10px 0 20px
     font-weight: 200
 
   p
@@ -802,6 +819,8 @@ ul.wrapping-list
   background: #f4f4f4
   color: #c9c9c9
   //font-size: 0.8em
+  .fa
+    color: unset !important
 
   a
     color: #c9c9c9
@@ -861,3 +880,6 @@ ul.wrapping-list
 .fa-instagram:hover
   background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)
   color: white
+
+.hide
+  display: none !important

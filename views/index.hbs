@@ -159,7 +159,7 @@
 </section>
 
 
-<section class="services margin-v hidden-md-down hideable gobierno-only constructor-only mostrador-only" id="servicios">
+<section class="services margin-v hidden-md-down hideable gobierno-only constructora-only mostrador-only" id="servicios">
     <div class="container">
         <div class="row  carousel slide" data-ride="carousel" id="carouselIndicators2" data-interval="false">
             <!--<div id="carouselIndicators2" class="carousel slide" data-ride="carousel">-->
@@ -253,7 +253,7 @@
 </section>
 
 <section id="servicios-mobile"
-         class="services services-mobile hidden-md-up section-m-b hideable gobierno-only constructor-only mostrador-only">
+         class="services services-mobile hidden-md-up section-m-b hideable gobierno-only constructora-only mostrador-only">
     <div class="container">
         <div class="subtitle">Por qué elegirnos</div>
         <h2 class="with-subtitle">Ofrecemos más</h2>
@@ -1702,7 +1702,13 @@
 
         //    Adjust INICIO to be same size as Video-Wrapper on view
         let wrapper_height = $('.video-wrapper').height();
-        $('#inicio').height(wrapper_height - 180);
+        if ($(window).width() < 992) {
+            $('#inicio').height(wrapper_height - 180);
+        }
+        else{
+            $('#inicio').height(wrapper_height - 80);
+        }
+
 
         //GO to proper form when cotizacion-btn is pressed
         $('#cotizacion-btn').on('click', function () {

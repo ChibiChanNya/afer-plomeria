@@ -448,6 +448,9 @@ a:not([href]):not([tabindex]) {
       -webkit-box-shadow: none; }
       .soluciones .card-group .card .card-block h4 {
         font-size: 1.3em; }
+      @media screen and (max-width: 1200px) {
+        .soluciones .card-group .card .card-block {
+          font-size: 0.8em; } }
 
 .logo-wrap img {
   max-width: 100px;
@@ -459,9 +462,10 @@ img.logo-sm {
 img.logo-xs {
   max-width: 100px; }
 
-ul.wrapping-list li {
-  float: left;
-  margin: 10px 20px; }
+@media screen and (min-width: 768px) {
+  ul.wrapping-list li {
+    float: left;
+    margin: 10px 20px; } }
 
 ul.wrapping-list.big-margin li {
   margin: 10px 35px; }

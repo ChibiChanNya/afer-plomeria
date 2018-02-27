@@ -560,6 +560,10 @@ a:not([href]):not([tabindex])
       .card-block
         h4
           font-size: 1.3em
+        @media screen and (max-width: $break-lg)
+          font-size: 0.8em
+
+
 
 .logo-wrap
   img
@@ -577,13 +581,21 @@ img
 
 ul.wrapping-list
 
-  li
-    float: left
-    margin: 10px 20px
+  @media screen and (min-width: $break-md)
+    li
+      float: left
+      margin: 10px 20px
+
+
+
 
   &.big-margin
     li
       margin: 10px 35px
+
+
+
+
 
 // PRODUCTS
 .card-deck .card
